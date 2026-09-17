@@ -1,4 +1,4 @@
-# sql-student-management-system
+
 # Student Management System
 
 A relational database project designed to store and manage student records, course enrollments, and academic performance using SQL.
