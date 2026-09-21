@@ -14,7 +14,7 @@ A relational database system built to manage student information, course enrollm
 ## 🗂️ Database Schema Overview
 
 The database consists of three core relational tables:
-
+```
 +------------------+         +--------------------+         +-----------------+
 |     Students     |         |    Enrollments     |         |     Courses     |
 +------------------+         +--------------------+         +-----------------+
@@ -24,7 +24,7 @@ The database consists of three core relational tables:
 | email            |         | grade              |         +-----------------+
 | enrollment_date  |         +--------------------+
 +------------------+
----
+```
 ## 📊 Sample Queries & Analysis
 
 ### 1. Retrieve Course Enrollment & Student Details
@@ -36,7 +36,8 @@ SELECT
     e.grade
 FROM Enrollments e
 JOIN Students s ON e.student_id = s.student_id
-JOIN Courses c ON e.course_id = c.course_id; 
+JOIN Courses c ON e.course_id = c.course_id;
+```
 ### 2. Calculate Average Grade / Performance by Course
 ```SQL
 SELECT 
@@ -46,6 +47,7 @@ SELECT
 FROM Courses c
 LEFT JOIN Enrollments e ON c.course_id = e.course_id
 GROUP BY c.course_id, c.course_name;
+```
 ##🚀 How to Run the Project   
 1.Open your SQL database environment (MySQL Workbench, PostgreSQL, SQLite, or DB Browser).
 
