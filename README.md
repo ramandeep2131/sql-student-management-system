@@ -48,9 +48,9 @@ FROM Courses c
 LEFT JOIN Enrollments e ON c.course_id = e.course_id
 GROUP BY c.course_id, c.course_name;
 ```
-##🚀 How to Run the Project   
-1.Open your SQL database environment (MySQL Workbench, PostgreSQL, SQLite, or DB Browser).
+###🚀 How to Run the Project   
+1. Open your SQL database environment (MySQL Workbench, PostgreSQL, SQLite, or DB Browser).
 
-2.Download or copy the student_management_system.sql file.
+2. Download or copy the student_management_system.sql file.
 
-3.Import or execute the script in your database client to instantiate tables, insert sample data, and run test queries
+3. Import or execute the script in your database client to instantiate tables, insert sample data, and run test queries
